@@ -63,7 +63,7 @@ nav ul li a:hover {
 }
 
 /* ========== Hero Section ========== */
-main > section:first-of-type {
+main>section:first-of-type {
   background: url('./images/background.png') no-repeat center/cover;
   text-align: center;
   padding: 160px 20px 80px;
@@ -100,7 +100,7 @@ button:hover {
 }
 
 /* ========== Testimonials Section ========== */
-main > section:nth-of-type(2) {
+main>section:nth-of-type(2) {
   background-color: #c271ff;
   padding: 80px 20px;
   display: flex;
@@ -123,85 +123,85 @@ main h3 {
 }
 
 /* ========== Tutorials Section ========== */
-main > section:nth-of-type(3) {
+main>section:nth-of-type(3) {
   background: #fff;
   color: #000;
   text-align: center;
   padding: 80px 20px;
 }
 
-main > section:nth-of-type(3) h2 {
+main>section:nth-of-type(3) h2 {
   font-size: 30px;
   margin-bottom: 60px;
 }
 
-main > section:nth-of-type(3) > div {
+main>section:nth-of-type(3)>div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
 }
 
-main > section:nth-of-type(3) h3 {
+main>section:nth-of-type(3) h3 {
   font-size: 18px;
   margin: 10px 0;
 }
 
-main > section:nth-of-type(3) p {
+main>section:nth-of-type(3) p {
   font-size: 14px;
   color: #666;
 }
 
-main > section:nth-of-type(3) i {
+main>section:nth-of-type(3) i {
   color: #c271ff;
 }
 
 /* ========== Free Membership Section ========== */
-main > section:nth-of-type(4) {
+main>section:nth-of-type(4) {
   background: #071629;
   padding: 80px 20px;
   color: white;
   text-align: center;
 }
 
-main > section:nth-of-type(4) h2 {
+main>section:nth-of-type(4) h2 {
   margin-bottom: 40px;
   font-size: 28px;
   color: #c271ff;
 }
 
-main > section:nth-of-type(4) > div {
+main>section:nth-of-type(4)>div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 40px;
   margin-bottom: 40px;
 }
 
-main > section:nth-of-type(4) img {
+main>section:nth-of-type(4) img {
   margin: 0 auto 10px;
   width: 40px;
 }
 
 /* ========== FAQ Section ========== */
-main > section:nth-of-type(5) {
+main>section:nth-of-type(5) {
   background: #fff;
   color: #071629;
   padding: 80px 20px;
 }
 
-main > section:nth-of-type(5) h2 {
+main>section:nth-of-type(5) h2 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 50px;
 }
 
-main > section:nth-of-type(5) > div {
+main>section:nth-of-type(5)>div {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
 }
 
-main > section:nth-of-type(5) h3 {
+main>section:nth-of-type(5) h3 {
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -370,6 +370,78 @@ footer p {
   opacity: 0.8;
 }
 
+/* ---------- Quote Section ---------- */
+.quote-section {
+  background-color: #c271ff;
+  /* Purple background from Figma */
+  padding: 80px 20px;
+  /* Padding similar to other sections */
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* Center the quote content horizontally */
+  align-items: center;
+  /* Center the quote content vertically */
+}
+
+.quote-content {
+  display: flex;
+  /* Use flexbox for image and text layout */
+  align-items: center;
+  /* Align items vertically in the center */
+  max-width: 900px;
+  /* Limit content width */
+  gap: 50px;
+  /* Space between image and text */
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
+  justify-content: center;
+  /* Center items when wrapped */
+}
+
+.quote-img {
+  width: 160px;
+  /* Adjust image size */
+  height: 160px;
+  border-radius: 50%;
+  /* Make it circular */
+  object-fit: cover;
+  /* Ensure image covers the area */
+  flex-shrink: 0;
+  /* Prevent image from shrinking */
+}
+
+.quote-text {
+  flex-grow: 1;
+  /* Allow text to take available space */
+  max-width: 600px;
+  /* Max width for the text content */
+}
+
+.quote-text blockquote {
+  font-size: 22px;
+  /* Adjust quote font size */
+  font-style: normal;
+  /* Remove default italic for blockquote */
+  line-height: 1.6;
+  margin-bottom: 15px;
+  /* Space below the quote */
+}
+
+.quote-text h3 {
+  font-size: 18px;
+  /* Name font size */
+  font-weight: bold;
+  margin-top: 0;
+  /* Reset default margin */
+}
+
+.quote-text p {
+  font-size: 16px;
+  /* Title font size */
+  opacity: 0.8;
+  /* Slightly less opaque for title */
+}
 
 /* ---------- Membership Section ---------- */
 .membership {
