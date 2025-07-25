@@ -1,0 +1,30 @@
+/* Set <body> as a flex container in column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Ensure it fills the full viewport height */
+    margin: 0;
+}
+
+/* Set <main> as a flex container in row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    /* Allow <main> to grow and shrink */
+}
+
+/* <article> takes 2 parts of the space */
+article {
+    flex: 2;
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+}
+
+/* <aside> takes 1 part of the space */
+aside {
+    flex: 1;
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+}
