@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
-  color: #fff;
-  background-color: #071629;
+  color: #071629; /* Changed to dark blue for default text */
+  background-color: #fff; /* Changed to white for overall background */
 }
 
 a {
@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 /* ========== Hero Section ========== */
 main>section:first-of-type {
-  background: url('./images/background.png') no-repeat center/cover;
+  background: url('./images/background.JPG') no-repeat center/cover;
   text-align: center;
   padding: 160px 20px 80px;
 }
@@ -206,40 +206,64 @@ main>section:nth-of-type(5) h3 {
   margin-bottom: 10px;
 }
 
-/* ========== Footer ========== */
+/* ---------- Footer ---------- */
 footer {
   background: #071629;
+  /* Dark background from Figma */
   color: white;
   padding: 40px 20px;
+  /* Standard padding */
   text-align: center;
+  /* Ensures copyright is centered by default */
 }
 
-footer section {
+.footer-top {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  /* Pushes logo to left, icons to right */
   align-items: center;
-  gap: 20px;
+  /* Vertically centers items */
+  max-width: 1100px;
+  /* Limit width similar to other sections */
+  margin: 0 auto;
+  /* Center the top content */
+  padding-bottom: 20px;
+  /* Space above copyright */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Subtle separator */
 }
 
-footer img {
-  width: 100px;
+.footer-logo {
+  height: 35px;
+  /* Match header logo size */
+  width: auto;
+  /* Maintain aspect ratio */
 }
 
-footer i {
-  margin: 0 10px;
+.social-icons a {
+  margin-left: 25px;
+  /* Space between icons */
   font-size: 20px;
+  /* Icon size */
   color: white;
-  cursor: pointer;
+  /* Icon color */
+  transition: color 0.3s;
 }
 
-footer i:hover {
+.social-icons a:hover {
   color: #c271ff;
+  /* Purple hover effect */
 }
 
-footer p {
+.footer-bottom {
+  padding-top: 20px;
+  /* Space above copyright */
+}
+
+.footer-bottom p {
   font-size: 12px;
   opacity: 0.6;
-  margin-top: 20px;
+  /* Lighter text for copyright */
 }
 
 /* ---------- Header ---------- */
@@ -276,7 +300,7 @@ footer p {
   color: #c271ff;
 }
 
-/* ---------- Hero Section ---------- */
+---------- Hero Section ----------
 .hero {
   background: url("https://i.ibb.co/6BztsDL/header-bg.jpg") no-repeat center center;
   background-size: cover;
@@ -353,9 +377,15 @@ footer p {
 
 .pro img {
   width: 120px;
+  /* Set a specific width */
   height: 120px;
+  /* Set height equal to width for a perfect circle */
   border-radius: 50%;
+  /* Makes the image perfectly circular */
+  object-fit: cover;
+  /* Ensures the image covers the circular area without distortion */
   margin-bottom: 10px;
+  /* Keep consistent spacing */
 }
 
 .pro h3 {
@@ -443,6 +473,36 @@ footer p {
   /* Slightly less opaque for title */
 }
 
+/* Previous CSS */
+
+.video-author {
+  display: flex;
+  /* Makes the children (avatar and name) align horizontally */
+  align-items: center;
+  /* Vertically aligns the avatar and name in the middle */
+  margin-bottom: 15px;
+  /* Keep existing margin */
+  padding: 0 15px;
+  /* Keep existing padding */
+}
+
+/* Previous CSS for .author-avatar and .author-name */
+.author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  /* Space between avatar and name */
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #c271ff;
+}
+
+/* Rest of your CSS */
 /* ---------- Membership Section ---------- */
 .membership {
   background-color: #071629;
@@ -503,3 +563,31 @@ footer p {
 .register-btn:hover {
   background-color: #a956f5;
 }
+
+/* ========== FAQ Section ========== */
+main>section:nth-of-type(5) {
+  background: #fff;
+  color: #071629;
+  padding: 80px 20px;
+}
+
+main>section:nth-of-type(5) h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main>section:nth-of-type(5)>div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+main>section:nth-of-type(5) h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+
