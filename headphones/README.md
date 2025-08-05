@@ -71,7 +71,7 @@ Simply open the `index.html` file in your web browser to view the webpage locall
 - Keyboard navigable
 
 ## Author
-[Your Name] - [GitHub Profile](https://github.com/yourusername)
+[Reuben Idan] - [GitHub Profile](https://github.com/reuben-dan)
 
 ## Acknowledgments
 - Nicolas Philippot for the original design
